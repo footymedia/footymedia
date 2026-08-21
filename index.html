@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FootyMedia | Football News & Scores</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080b10;
+  color: #fff;
+}
+
+header {
+  background: #0e131b;
+  padding: 20px 16px;
+  border-bottom: 1px solid #202936;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #21d07a;
+}
+
+.tagline {
+  color: #8e99a7;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px;
+  background: #0d1219;
+  border-bottom: 1px solid #202936;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cbd3dc;
+  background: #171e28;
+  padding: 9px 15px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+nav a.active {
+  background: #21d07a;
+  color: #06100b;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 18px 14px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 8px 0 14px;
+}
+
+.live-box {
+  background: linear-gradient(135deg, #111923, #0d131b);
+  border: 1px solid #26313d;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.live-title {
+  color: #ff4d5a;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.match {
+  background: #151d27;
+  border-radius: 10px;
+  padding: 13px;
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team {
+  font-weight: 600;
+}
+
+.score {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.league {
+  color: #8f9aa8;
+  font-size: 11px;
+  margin-bottom: 4px;
+}
+
+.news-card {
+  background: #111820;
+  border: 1px solid #242e3a;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.news-card h3 {
+  font-size: 17px;
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.news-card p {
+  color: #9da8b5;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 9px;
+  border-radius: 6px;
+  background: #1b2631;
+  color: #21d07a;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.leagues {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.league-card {
+  background: #111820;
+  border: 1px solid #242e3a;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+}
+
+.league-card div {
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+.league-card p {
+  font-size: 13px;
+  color: #cbd3dc;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  color: #687482;
+  font-size: 12px;
+  border-top: 1px solid #202936;
+  margin-top: 25px;
+}
+
+@media (min-width: 700px) {
+  .leagues {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">⚽ <span>Footy</span>Media</div>
+  <div class="tagline">Football news, scores & updates</div>
+</header>
+
+<nav>
+  <a href="#" class="active">Live</a>
+  <a href="#">Scores</a>
+  <a href="#">News</a>
+  <a href="#">Fixtures</a>
+  <a href="#">Standings</a>
+</nav>
+
+<main class="container">
+
+  <h2 class="section-title">🔴 Live Matches</h2>
+
+  <div class="live-box">
+
+    <div class="live-title">● LIVE NOW</div>
+
+    <div class="match">
+      <div>
+        <div class="league">Premier League</div>
+        <div class="team">Manchester United</div>
+        <div class="team">Chelsea</div>
+      </div>
+
+      <div class="score">
+        1 - 1
+      </div>
+    </div>
+
+    <div class="match">
+      <div>
+        <div class="league">La Liga</div>
+        <div class="team">Barcelona</div>
+        <div class="team">Real Madrid</div>
+      </div>
+
+      <div class="score">
+        0 - 0
+      </div>
+    </div>
+
+  </div>
+
+  <h2 class="section-title">🏆 Top Leagues</h2>
+
+  <div class="leagues">
+
+    <div class="league-card">
+      <div>🏴</div>
+      <p>Premier League</p>
+    </div>
+
+    <div class="league-card">
+      <div>🇪🇸</div>
+      <p>La Liga</p>
+    </div>
+
+    <div class="league-card">
+      <div>🇮🇹</div>
+      <p>Serie A</p>
+    </div>
+
+    <div class="league-card">
+      <div>🇩🇪</div>
+      <p>Bundesliga</p>
+    </div>
+
+    <div class="league-card">
+      <div>🇫🇷</div>
+      <p>Ligue 1</p>
+    </div>
+
+  </div>
+
+  <h2 class="section-title">📰 Latest Football News</h2>
+
+  <article class="news-card">
+    <h3>Welcome to FootyMedia</h3>
+    <p>
+      Your new home for football news, scores, fixtures and updates from
+      the biggest leagues around the world.
+    </p>
+    <span class="badge">FOOTYMEDIA</span>
+  </article>
+
+  <article class="news-card">
+    <h3>Transfer News</h3>
+    <p>
+      The latest transfer stories and football updates will appear here.
+    </p>
+    <span class="badge">TRANSFERS</span>
+  </article>
+
+</main>
+
+<footer>
+  © 2026 FootyMedia • Football News & Scores
+</footer>
+
+</body>
+
+</html>
